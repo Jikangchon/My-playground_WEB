@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Playground</title>
+</head>
+<body>
+
+  <!--
+  <script>
+    'use strict';
+
+    let name = prompt("빅스비가 무엇인가요?", "");
+    alert(name);
+  </script>
+-->
+  
+  <style>
+      div#aa {
+          position:absolute;
+          margin-bottom: 100px;
+          margin-left: 300px;
+          background: rgb(255, 227, 69);
+
+          /*원 모양*/
+          width: 90px;
+          height: 90px;
+          border-radius: 80px;
+
+          /*아래에서 만든 애니메이션 적용*/
+          animation-name: bounce;
+          animation-duration: 1.9s;
+          animation-iteration-count: infinite;
+      }
+      /*애니메이션 만들기*/
+      @keyframes myanim{
+          0% {left: 0px; top: 0px};
+          50% {left: 200px; top: 0px;}
+          100% {left: 0px; top: 0px;}
+      }
+      /*공 튀기는 애니메이션*/
+      @keyframes bounce {
+          0%, 100%{
+              bottom: 0px;
+              animation-timing-function: ease-out;
+          }
+
+          47%{
+              bottom: 200px;
+              animation-timing-function: ease-in;
+          }
+      }
+
+      div#aa2 {
+          position:absolute;
+          margin-bottom: 100px;
+          margin-left: 620px;
+          background: rgb(255, 227, 69);
+
+          /*원 모양*/
+          width: 50px;
+          height: 50px;
+          border-radius: 25px;
+
+          /*아래에서 만든 애니메이션 적용*/
+          animation-name: bounce;
+          animation-duration: 1.5s;
+          animation-iteration-count: infinite;
+
+          /*애니메이션 만들기*/
+      @keyframes myanim{
+          0% {left: 0px; top: 0px};
+          50% {left: 200px; top: 0px;}
+          100% {left: 0px; top: 0px;}
+      }
+      /*공 튀기는 애니메이션*/
+      @keyframes bounce {
+          0%, 100%{
+              bottom: 0px;
+              animation-timing-function: ease-out;
+          }
+
+          50%{
+              bottom: 200px;
+              animation-timing-function: ease-in;
+          }
+      }
+      }
+
+      h1#title01 {
+          color: rgb(255, 123, 0);
+          font-size: 1rem;
+          text-align: center;
+      }
+
+      h5.line {
+          text-align: center;
+      }
+
+  </style>
+    
+    <h1 id="title01">LISTENING MUSIC PLACE</h1>
+
+    <br><br><br>
+    <h5 class="line">____</h5>
+    <h1 id="title01">THIS IS MY PLAYGROUND</h1>
+    <p>
+
+    </p>
+    
+        
+    
+    <div id="aa"></div>
+    <div id="aa2"></div>
+
+</body>
+</html>
